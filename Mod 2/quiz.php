@@ -3,7 +3,7 @@
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         $num = $_POST["number"];
 
-        //using modulous to check the remainder to determine if the nmber is even or odd
+        //using modulus to check the remainder to determine if the nmber is even or odd
         if($num%2 ==0){
             echo "Even number";
         }
