@@ -99,5 +99,19 @@
                 echo "Problem making connection";
             }
         ?>
+
+        <h2>Add A Joke</h2>
+        <form method="post" action="post_submit.php">
+            <label for="category">Category:</label><br/>
+            <input type ="text" id="category" name ="category" required><br><br>
+
+            <label for="joke">Joke:</label><br/>
+            <input type ="text" id="joke" name ="joke" required><br><br>
+
+            <label for="punchline">Punchline:</label><br/>
+            <input type ="text" id="punchline" name ="punchline" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
