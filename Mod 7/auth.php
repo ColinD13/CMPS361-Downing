@@ -23,10 +23,15 @@
             header("Location: players.php");
 
         } else {
-            echo "Invalid Password";
-
+            header ("Location: login.php?error=fail_login");
+            exit();
         }
 
         pg_close($conn);
+    }
+    else {
+        // user not found
+        header("Location: login.php?error=fail_login");
+        exit();
     }
 ?>

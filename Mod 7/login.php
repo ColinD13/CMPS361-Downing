@@ -1,26 +1,41 @@
+
+<?php
+    session_start();
+    //vars
+    $error_message = "";
+
+    //checking if the password or username are correct or wrong
+    if(isset($_GET['error'])){
+        if($_GET['error'] === "fail_login"){
+            $error_message = "Invalid username or password";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Players Login</title>
+    <link rel="stylesheet" href="./styles_login.css">
 </head>
 
 <body>
-    <h2>Login Authentication</h2>
+    <form action="auth.php" method="post" class="login_form">
+        <h2 class="login_header">Login Authentication</h2>
+        <div class="login_field">
+            <label class="login_label" for="username">Username</label>
+            <input class="login_input" type="text" name="username" required>
+        </div>
 
-    <form action="auth.php" method="post">
-        <label for="username">Username</label>
-        <input type="text" name="username" required>
-        <br>
-        <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
+        <div class="login_field">
+            <label class="login_label" for="password">Password</label>
+            <input class="login_input" type="password" name="password" required>
+        </div>
+        <div class="login_button_container">
+            <button class="login_button" type="submit">Login</button>
+        </div>
+        <p class="login_error"><?=htmlspecialchars($error_message)?></p>
     </form>
 </body>
 </html>
-
-<?php
-
-?>
