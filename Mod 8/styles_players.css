@@ -48,6 +48,7 @@ h1{
     color: white;
     border-radius: 5px;
     text-decoration: none;
+    margin:1rem;
 }
 
 
@@ -57,5 +58,15 @@ h1{
 }
 
 .to_add_player:hover {
-    color: #216fb8;
-  }
+    color: #8eb6cd;
+}
+
+.current_page{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #013369;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin:1rem;
+}

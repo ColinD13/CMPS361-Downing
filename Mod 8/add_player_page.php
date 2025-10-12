@@ -45,6 +45,10 @@
             <button class="add_player_button" type="submit">Add</button>
         </div>
         <p class="player_state"><?=htmlspecialchars($state)?></p>
+
+        <div class="to_add_player_div">
+            <a href="players.php" class="to_add_player">View Players</a>
+        </div>
     </form>
 </body>
 </html>

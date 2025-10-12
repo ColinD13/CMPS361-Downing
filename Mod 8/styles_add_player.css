@@ -69,3 +69,21 @@ body{
     margin:1rem auto;
     font-weight: 700;
 }
+
+.to_add_player {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #013369;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.to_add_player_div{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.to_add_player:hover {
+    color: #8eb6cd;
+}
