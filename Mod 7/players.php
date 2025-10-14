@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="./styles_players.css">
 </head>
 <body>
-    <h1>NFL Players</h1>
+    <h1>Welcome To The NFL Player Portal!</h1>
 </body>
 </html>
 <?php
-    session_start();
+    include('check_logged_in.php');
     include('create_conn.php');
 
     //display the players
@@ -28,6 +28,9 @@
     }
     echo "</div>";
     //end of card container
+    echo "<div class='to_add_player_div'>";
+    echo "<a class='to_add_player' href='logout.php'>Logout</a>";
+    echo "</div>";
 
     pg_close($conn);
 ?>
