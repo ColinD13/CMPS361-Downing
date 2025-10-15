@@ -19,6 +19,7 @@
         if(hash_equals($user_fetch['password'], crypt($pass_post, $user_fetch['password']))){
 
             $_SESSION['username'] = $user_fetch["username"];
+            $_SESSION['logged_in'] = true;
 
             header("Location: players.php");
 

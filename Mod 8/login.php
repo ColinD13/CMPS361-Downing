@@ -1,6 +1,7 @@
 
 <?php
     session_start();
+    $_SESSION['logged_in'] = false;
     //vars
     $error_message = "";
 
