@@ -6,6 +6,12 @@
 </head>
 <body>
     <h1>NFL Teams</h1>
+
+    <div class="team_popup" id="popup">
+        <!-- loaded form js -->
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
 <?php
@@ -25,13 +31,13 @@
     }
 
     //start of card container
-    echo "<div class='card_container'>";
+    echo "<div class='card_container' id='open_popup'>";
     foreach($teams as $row){
         //to get the color of the team
         $team_name = $row["team_name"];
         $gradient = get_color_gradient($team_name);
 
-        echo "<div class='card' style='--team-gradient: $gradient;'>";
+        echo "<div class='card team  trigger' style='--team-gradient: $gradient;' data-team='" . $row["team_name"] ."'>";
         echo "<h2>" . $row["team_name"] . "</h2>";
         echo "<p>" . $row["city"] . "</p>";
         echo "<p>" . $row["conference"] . "</p>";

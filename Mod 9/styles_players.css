@@ -35,7 +35,7 @@ h1{
     flex-wrap: wrap;       
     gap: 1rem;     
     justify-content: center; 
-    padding: 7.5rem 7.5rem;
+    padding: 7.5rem 20rem;
     background-color: #1c3d61;
     margin:auto 15rem;
     border: 5px solid black;
@@ -71,3 +71,26 @@ h1{
     text-decoration: none;
     margin:1rem;
 }
+
+.team_popup{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /*had to look this up because the div was overlaying over top of it */
+}
+
+.team_content{           
+    justify-content: center; 
+    padding: 7.5rem 20rem;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.trigger {
+    cursor: pointer;
+    z-index: 1;
+  }
