@@ -82,15 +82,71 @@ h1{
     z-index: 2; /*had to look this up because the div was overlaying over top of it */
 }
 
-.team_content{           
-    justify-content: center; 
-    padding: 7.5rem 20rem;
-    background-color: white;
-    border: 5px solid black;
+.team_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 4px solid #222;
     border-radius: 25px;
+    padding: 2rem 3rem;
+    max-width: 1500px;
+    margin: 3rem auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.team_content h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team_players_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.team_player {
+    background-color: #1c3d61;
+    border: 2px solid #D50A0A;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 25px;
+    width: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3rem auto;
+    color: white;
+}
+
+.team_player::hover{
+    transform: translateY(-5px);
+}
+
+#close_popup {
+    margin-top: 2rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#close_popup:hover {
+    background-color: #444;
+    transform: scale(1.05);
 }
 
 .trigger {
     cursor: pointer;
     z-index: 1;
-  }
+}

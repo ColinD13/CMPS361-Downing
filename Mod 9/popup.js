@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const html = await response.text();
             popup.innerHTML = html;
 
-            const closePopup = document.getElementById('closePopup');
+            const closePopup = document.getElementById('close_popup');
             closePopup.addEventListener('click', () => {
                 popup.style.display = 'none';
             });
