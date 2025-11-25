@@ -4,7 +4,7 @@
     include("create_conn.php");
 
     ///fetch
-    $sql = "select team, count(team) as player_count from players group by team order by team desc";
+    $sql = "select college, count(college) as player_count from players group by college order by college desc";
     $result = pg_query($conn, $sql);
     $data = pg_fetch_all($result);
     $json = json_encode($data);

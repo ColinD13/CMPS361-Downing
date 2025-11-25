@@ -159,3 +159,24 @@ h1{
     cursor: pointer;
     z-index: 1;
 }
+
+.chart-container {
+    width: 650px;
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 25px;
+    
+    background: #ffffff;
+    border-radius: 16px; 
+    box-shadow: 
+        0 4px 10px rgba(0, 0, 0, 0.06),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #e5e7eb;
+}
+
+#metricsChart {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
