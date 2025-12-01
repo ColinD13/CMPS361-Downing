@@ -3,7 +3,7 @@
     $port = "5432";
     $dbname = "NFL_Players";
     $user ="postgres";        
-    $password = "Hockey##13";
+    $password = "";
 
     $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 

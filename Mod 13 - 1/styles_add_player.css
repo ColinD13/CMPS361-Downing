@@ -1,0 +1,89 @@
+body{
+    background-color: #1c3d61;
+}
+
+.add_player_form{
+    width: 10rem;
+    margin: 2rem auto;
+    border: 2px solid black;
+    padding: 2.5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.add_player_header{
+    text-align: center;
+    color: #013369;
+}
+
+.add_player_field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.add_player_label{
+    color: #013369;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: .25rem;
+    align-self: flex-start;
+}
+
+.add_player_input{
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-sizing: border-box; /*fixed the overflow of the padding and border and stuff */
+    width: 100%;
+    height: 2rem;
+    text-align: left;
+}
+
+.add_player_input:hover{
+    background-color: blanchedalmond;
+}
+
+.add_player_button{
+    background-color: rgb(189, 187, 187);
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 8rem;
+}
+
+.add_player_button:hover{
+    background-color: grey;
+}
+
+._add_player_button_container{
+    text-align: center;
+}
+
+.player_state{
+    color: #013369;
+    text-align: center;
+    margin:1rem auto;
+    font-weight: 700;
+}
+
+.to_add_player {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #013369;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.to_add_player_div{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.to_add_player:hover {
+    color: #8eb6cd;
+}
