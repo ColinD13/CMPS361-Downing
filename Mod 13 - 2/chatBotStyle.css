@@ -1,0 +1,88 @@
+#chat-wrapper body {
+    background-color: #1c3d61;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Smaller width */
+#chat-wrapper .chat-container {
+    width: 320px; /* was 450px */
+    background: white;
+    border-radius: 12px;
+    padding: 14px; /* was 20px */
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Slightly smaller header text */
+#chat-wrapper .chat-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 20px; /* added smaller size */
+}
+
+/* Smaller chat window height */
+#chat-wrapper #chatbot {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 240px; /* was 320px */
+    overflow-y: auto;
+    padding: 10px;
+    background: #fafafa;
+}
+
+/* Slightly smaller messages */
+#chat-wrapper #messages div {
+    margin: 10px 0;
+    padding: 10px 12px; /* was 12px 15px */
+    border-radius: 8px;
+    max-width: 85%;
+    line-height: 1.4;
+    font-size: 14px; /* was 15px */
+}
+
+#chat-wrapper .user-message {
+    background: #007bff;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+#chat-wrapper .bot-message {
+    background: #e6e6e6;
+    color: #111;
+    text-align: left;
+    border: 1px solid #d1d1d1;
+}
+
+/* Slightly smaller form */
+#chat-wrapper #chat-form {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+#chat-wrapper #chat-form input {
+    flex: 1;
+    padding: 10px; /* was 12px */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 13px; /* was 14px */
+}
+
+#chat-wrapper #chat-form button {
+    padding: 10px 16px; /* was 12px 20px */
+    background: #28a745;
+    color: white;
+    border: none;
+    font-size: 13px; /* was 14px */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#chat-wrapper #chat-form button:hover {
+    background: #218838;
+}
