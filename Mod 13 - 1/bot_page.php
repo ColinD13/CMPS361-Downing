@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Bot Logic</title>
-        <link rel="styles" href="">
+        <link rel="stylesheet" href="chatBotStyle.css">
     </head>
 
     <body>
@@ -19,6 +19,8 @@
         <script>
             const form = document.getElementById("chat-form");
             const messages = document.getElementById("messages");
+            const entranceMessage = `<div class='bot-message'><strong>Chatbot:</strong> Welcome to the NFL chatbot!</div>`;
+            messages.innerHTML += entranceMessage;
 
             form.addEventListener("submit", async (e) =>{
                 e.preventDefault();

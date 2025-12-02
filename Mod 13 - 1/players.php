@@ -101,6 +101,7 @@
     echo "<a class='to_add_player' href='add_player_page.php'>Add Player</a>";
     echo "<a class='to_add_player' href='logout.php'>Logout</a>";
     echo "<a class='to_add_player' href='teams.php'>Teams</a>";
+    echo "<a class='to_add_player' href='bot_page.php'>Chatbot</a>";
     echo "</div>";
 
     pg_close($conn);

@@ -14,6 +14,17 @@
 
     $add_player = "insert into players(name, jersey_number, team, college) values ($1,$2,$3,$4)";
 
+    //add question and answer for each new player added\
+
+    $addQuestion_team = "insert into questions_answers(question, answer) values ('Who does ' || $1 || ' play for?', $2)";
+    pg_query_params($conn, $addQuestion_team,array($player,$team));
+
+    $addQuestion_college = "insert into questions_answers(question, answer) values ('What college did ' || $1 || ' play for?', $2)";
+    pg_query_params($conn, $addQuestion_college,array($player,$college));
+
+    $addQuestion_jersey = "insert into questions_answers(question, answer) values ('What jersey number does ' || $1 || ' wear?', $2)";
+    pg_query_params($conn, $addQuestion_jersey,array($player,$jersey));
+
     $result = pg_query_params($conn, $add_player,array($player,$jersey,$team,$college));
 
     if($result){
